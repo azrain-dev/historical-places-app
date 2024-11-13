@@ -1,0 +1,121 @@
+.page-title {
+  font-family: "Berkshire Swash", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-background {
+  transition: background-image 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.place-slider .slick-slide {
+  padding: 10px 8px;
+  min-height: 100%;
+}
+.place-slider .slick-center {
+  transition: transform 0.3s;
+}
+
+.slick-center .place-item {
+  z-index: 1;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.4)
+  ) !important;
+}
+
+.slick-center .place-item .card-title,
+.slick-center .place-item .card-text {
+  color: #000 !important;
+}
+
+.slick-next {
+  right: -10px !important;
+}
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px !important;
+  z-index: 1;
+}
+
+.card-img-container {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.place-item {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.22);
+}
+
+.card-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  font-family: "Berkshire Swash", serif;
+}
+
+.btn-visited {
+  position: absolute;
+  display: flex;
+  top: 25px;
+  right: 25px;
+}
+
+.btn-colored {
+  background-image: linear-gradient(
+    144deg,
+    #3cdfb6,
+    #1edb93 50%,
+    #25c57b
+  ) !important;
+  padding: 12px 4px !important;
+  border: none !important;
+}
+
+.btn-colored span {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn-colored:hover span {
+  background: none;
+  font-weight: 600;
+  color: #fff;
+}
